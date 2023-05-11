@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Isoel Poker Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Isoel Poker Quiz</h1>
+    </header>
+
+    <main>
+      <section id="start-section">
+        <p>Test your knowledge of poker fundamentals!</p>
+        <button id="start-btn">Start Quiz</button>
+      </section>
+
+      <section id="quiz-section" class="hidden">
+        <p id="question-text"></p>
+        <ul id="choices-list"></ul>
+        <button id="submit-btn">Submit Answer</button>
+      </section>
+
+      <section id="results-section" class="hidden">
+        <h2>Results</h2>
+        <p id="score-text"></p>
+        <form>
+          <label for="initials">Enter Your Initials:</label>
+          <input type="text" id="initials" name="initials" maxlength="3" />
+          <button id="submit-score">Submit Score</button>
+        </form>
+      </section>
+    </main>
+
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
